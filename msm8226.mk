@@ -94,6 +94,8 @@ endif
 
 # Audio
 PRODUCT_PACKAGES += \
+    android.hardware.audio@2.0-impl \
+    android.hardware.audio.effect@2.0-impl \
     audiod \
     audio.a2dp.default \
     audio.primary.msm8226 \
@@ -104,6 +106,10 @@ PRODUCT_PACKAGES += \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     tinymix
+
+# Bluetooth
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0-impl
 
 # Misc dependency packages
 PRODUCT_PACKAGES += \
@@ -119,6 +125,10 @@ PRODUCT_PACKAGES += \
     ethertypes \
     libebtc
 
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@3.0-impl
+
 # Keystore
 PRODUCT_PACKAGES += keystore.msm8226
 
@@ -127,18 +137,24 @@ PRODUCT_PACKAGES += charger charger_res_images
 
 # GPS
 PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.0-impl \
     gps.msm8226
 
 # HAL
 PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator@2.0-impl \
+    android.hardware.graphics.composer@2.1-impl \
+    android.hardware.graphics.mapper@2.0-impl \
+    android.hardware.memtrack@1.0-impl \
     copybit.msm8226\
     gralloc.msm8226 \
     hwcomposer.msm8226 \
-    lights.msm8226 \
     memtrack.msm8226 \
-    power.msm8226 \
-    sensors.msm8226 \
-    sensors.qcom
+
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-impl \
+    lights.msm8226
 
 # OMX
 PRODUCT_PACKAGES += \
@@ -147,12 +163,32 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.0-impl \
+    power.msm8226
+
+# Sensors
+PRODUCT_PACKAGES += \
+    android.hardware.sensors@1.0-impl \
+    sensors.msm8226 \
+    sensors.qcom
+
 # Recovery
 PRODUCT_PACKAGES += \
     imgdiff
 
-#wifi
+# USB
 PRODUCT_PACKAGES += \
+    android.hardware.usb@1.0-service
+
+# Vibrator
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator@1.0-impl
+
+# Wifi
+PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.0-service \
     libwpa_client \
     hostapd \
     wpa_supplicant \
@@ -177,6 +213,7 @@ ifeq ($(BOARD_HAS_NFC), true)
 PRODUCT_PACKAGES += \
     NfcNci \
     Tag \
+    android.hardware.nfc@1.0-impl \
     nfc_nci.pn54x.default \
     com.android.nfc_extras
 
