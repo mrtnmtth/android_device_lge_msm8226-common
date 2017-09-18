@@ -24,8 +24,6 @@
 # inherit from the proprietary version
 VENDOR_PATH := device/lge/msm8226-common
 
-TARGET_SPECIFIC_HEADER_PATH += $(VENDOR_PATH)/include
-
 # Bootloader
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
