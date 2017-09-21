@@ -129,6 +129,9 @@ vendor/lib/liblbs_core.so
 vendor/lib/libqti-perfd-client.so
 vendor/lib/libqc-opt.so
 
+# STLport
+vendor/lib/libstlport.so
+
 # OMX
 vendor/lib/libDivxDrm.so
 vendor/lib/libmmosal.so
