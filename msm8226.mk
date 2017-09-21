@@ -128,12 +128,9 @@ PRODUCT_PACKAGES += \
     ethertypes \
     libebtc
 
-# Keymaster
+# Keystore
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-impl
-
-# Keystore
-PRODUCT_PACKAGES += keystore.msm8226
 
 # Charger
 PRODUCT_PACKAGES += charger charger_res_images
