@@ -226,7 +226,7 @@ PRODUCT_PACKAGES += \
     NfcNci \
     Tag \
     android.hardware.nfc@1.0-impl \
-    nfc_nci.pn54x.default \
+    nfc_nci.msm8226 \
     com.android.nfc_extras
 
 # Configs
