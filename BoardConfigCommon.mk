@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2015 The CyanogenMod Project
-# Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2017-2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -130,7 +130,7 @@ VSYNC_EVENT_PHASE_OFFSET_NS := 2500000
 SF_VSYNC_EVENT_PHASE_OFFSET_NS := 0000000
 
 # Hardware tunables framework
-BOARD_HARDWARE_CLASS := $(VENDOR_PATH)/cmhw/
+BOARD_HARDWARE_CLASS := $(VENDOR_PATH)/lineagehw/
 
 # GPS
 TARGET_NO_RPC := true
